@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore Porsche models including the 911 GT3 RS, Macan, and Panamera. A destination for car lovers around the globe.">
+  <title>FUSION CARS</title>
+  <link rel="stylesheet" href="v.css">
+</head>
+<body>
+
+
+  <header>
+  <div class="container header-inner">
+    <div class="logo">
+      <h1>SPEEDY WHEELS</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#gt3rs">911 GT3 RS</a>
+      <a href="#macan">Macan</a>
+      <a href="#panamera">Panamera</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="container">
+
+    <section id="gt3rs" class="model fade-in visible">
+      <h2>PORSCHE 911 GT3 RS</h2>
+      <img src="911gt3rs.jpg" alt="Porsche 911 GT3 RS" width="100%">
+      <table>
+        <tr>
+          <th>USP</th>
+          <th>Special Features</th>
+          <th>Starting Price</th>
+        </tr>
+        <tr>
+          <td>Track-focused Supercar</td>
+          <td>Carbon Fibre Body Parts</td>
+          <td>$400,000</td>
+        </tr>
+      </table>
+      <p class="desc">
+        The high-performance 911 GT3 RS is road-approved yet track-ready. A naturally aspirated engine and carbon fibre reinforced plastic help achieve an ultra-light 1,450 kg build.The parts made of CFRP include the doors, front wings, roof, bonnet and rear lid.Optimised for use on a race track: the chassis with a wide track. Among other things, it ensures high lateral dynamics and improved anti-dive during braking.
+      </p>
+      <a class="model-link" href="https://www.porsche.com/international/models/911/911-gt3-rs/911-gt3-rs/" target="_blank">Explore Porsche 911 GT3 RS →</a>
+    </section>
+
+    <section id="macan" class="model fade-in visible">
+      <h2>PORSCHE Macan</h2>
+      <img src="macan.jpg" alt="Porsche Macan" width="100%">
+      <table>
+        <tr>
+          <th>USP</th>
+          <th>Special Features</th>
+          <th>Starting Price</th>
+        </tr>
+        <tr>
+          <td>Luxury Compact SUV</td>
+          <td>Sport Chrono Package, Adaptive Suspension</td>
+          <td>$120,000</td>
+        </tr>
+      </table>
+      <p class="desc">
+       The inline four-cylinder turbo engine in the Macan delivers maximum performance and efficiency even with its small size. The optional air suspension including PASM adapts to different driving situations: high level I, normal level and low level. It is characterised by its high drag torque and efficiency. 
+      </p>
+      <a class="model-link" href="https://www.porsche.com/international/models/macan/macan-models/macan/" target="_blank">Explore Porsche Macan →</a>
+    </section>
+
+    <section id="panamera" class="model fade-in visible">
+      <h2>PORSCHE Panamera</h2>
+      <img src="canera.png" alt="Porsche Panamera" width="100%">
+      <table>
+        <tr>
+          <th>USP</th>
+          <th>Special Features</th>
+          <th>Starting Price</th>
+        </tr>
+        <tr>
+          <td>Luxury Sport Sedan</td>
+          <td>4–5 Seat, Matrix LED, Active Ride</td>
+          <td>$180,000</td>
+        </tr>
+      </table>
+      <p class="desc">
+        The Panamera models are equipped with adaptive air suspension including Porsche Active Suspension Management (PASM) with Matrix LED headlights as standard. Panamera blends performance and comfort with air suspension and LED tech. Hybrid models offer Porsche Active Ride for superior dynamics.
+      </p>
+      <a class="model-link" href="https://www.porsche.com/middle-east/_india_/models/panamera/panamera-models/panamera/" target="_blank">Explore Porsche Panamera →</a>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 Fusion Cars. Built by Ayush 🚗</p>
+  </footer>
+
+  <script>
+    // Reveal animations on scroll
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeIns.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
